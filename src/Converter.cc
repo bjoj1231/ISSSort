@@ -1540,7 +1540,7 @@ void ISSConverter::ProcessMesytecData(){
 void ISSConverter::FinishMesytecData(){
 	
 	// Got all items
-	if( ( flag_mesy_data0 && flag_mesy_data1 && flag_mesy_data3 ) || flag_mesy_trace ){
+	if( ( flag_mesy_data0  && flag_mesy_data3 ) || flag_mesy_trace ){
 		
 		// Fill histograms
 		hmesy_hit[mesy_data->GetModule()]->Fill( ctr_mesy_hit[mesy_data->GetModule()], mesy_data->GetTime(), 1 );
